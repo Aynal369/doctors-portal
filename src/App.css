@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.middleBox {
+  background-color: #3a4256;
+}
+.leftRightBox {
+  background-color: #19d3ae;
+}
+.primaryText {
+  color: #19d3ae;
+}
+.secondaryText {
+  color: #3a4256;
+}
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#hero {
+  background: url("./assets/images/bg.png") no-repeat center;
+  min-height: 40rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#make_an_appointment {
+  background-image: url("./assets/images/appointment.png");
+  background-position: center;
+  background-size: 100% 100%;
+  height: 480px;
+  position: relative;
+  z-index: -99;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#make_an_appointment::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  z-index: -99;
+}
+#make_an_appointment img {
+  height: 586px;
+  transform: translateY(-130px);
+}
+#contact {
+  background: url("./assets/images/appointment.png") no-repeat fixed center;
+}
+footer {
+  background: url("./assets/images/footer.png") no-repeat center;
+}
+.grad {
+  background-image: linear-gradient(to right, #17d2b8 0%, #19d3ae 100%);
+  padding: 10px 30px;
+  text-transform: uppercase;
+  transition: 0.5s;
   color: white;
+  border-radius: 10px;
 }
-
-.App-link {
-  color: #61dafb;
+.grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .boxLeft {
+  background-image: linear-gradient(to right, #17d2b8 0%, #11d0dd 100%);
+} */
